@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de cadastro</title>
+</head>
+<body>
+    <section class="cadastro-container" id="cadastro-container">
+        <article class="cadastro-box">
+            <h2 id="cadastro-title">Cadastro</h2>
+            <form action="cadastro.mysql" method="post">
+                
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" placeholder="Digite o seu nome completo" required>
+                <br>
+                <br>
+                <label for="sex">Gênero</label>
+                <select id="sex" name="sex" placeholder="Qual o seu gênero?" required>
+                    <option value=""></option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                </select>
+                <br>
+                <br>
+                <label for="date of birth">Data de Nascimento</label>
+                <input type="date" id="date of birth" name="Date of birth" placeholder="Qual sua data de nascimento?" required>
+                <br>
+                <br>
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu nome de Usuário" required>
+                <br>
+                <br>
+                <label for="password">Senha</label>
+                <input type="text" id="password" name="password" placeholder="Digite sua senha" required>
+                <br>
+                <br>
+                <button type="submit">Criar conta</button>
+            </form>
+        </article>
+    </section>
+</body>
+</html>
