@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+    <main>
+        <figure>
+            <img src="/Imagens/EMI_logo.png" alt="">
+        </figure>
+        <form action="" method="">
+            <input type="text" value="" id="nome" name="nome" placeholder="Nome completo*">
+            <label for="nome"></label>
+            <br>
+            <input type="radio" value="feminino" id="feminino" name="genero">
+            <label for="feminino">Feminino</label>
+            <input type="radio" value="masculino" id="masculino" name="genero">
+            <label for="masculino">Masculino</label>
+            <input type="date" value="" id="data_nasc" name="data_nasc">
+            <label for="data_nasc"></label>
+            <br>
+            <input type="email" value="" id="email" name="email" placeholder="Email*">
+            <label for="email"></label>
+            <br>
+            <input type="password" value="" id="senha" name="senha" placeholder="Senha*">
+            <label for="senha"></label>
+            <i class="bi bi-eye-slash" id="mostrar_senha" id="mostrar_senha" onclick="mostrarSenha()"></i>
+            <br>
+            <button type="button">Avançar</button>
+            <!--Botão para cadastrar e retornar a tela de login ou para inicial-->
+        </form>
+    </main>
+    <script src="/js/login.js"></script>
+</body>
+</html>
