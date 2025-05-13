@@ -1,83 +1,101 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-header{
+body, main{
+    height: 100vh;
+}
+
+#gen_nasc{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    border-style: none;
 }
 
-h1{
-    grid-column: 1;
-    justify-self: center;
-    color:rgb(48, 63, 159);
-    font-family: "Roboto", sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-}
-
-main{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-#cadastro{
-    grid-column: 1;
-}
-
-#logo{
-    justify-self:center;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
-}
-
-#img_logo{
-    width: 13rem;
-}
-
-form{
+#genero{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    grid-column: 1fr;
+    align-items:normal
 }
 
-#gen_data{
+.gen{
+    color: rgb(48, 63, 159);
+    margin-left:1rem;
+}
+
+#masculino{
+    margin-right: 0.1rem;
+}
+
+#masc{
+    margin-left: 0.9rem;
+}
+
+#fem{
+    margin-right: 0.4rem;
+}
+
+.radio{
     display: flex;
-    flex-direction: row;
+    justify-content:center;
 }
 
-#fem, masc{
-    display: flex;
-    flex-direction: row;
-    cursor: pointer;
+#data_nasc::placeholder{
+    text-align: center;
 }
 
-input[type="text"]{
-    width: 25rem;
-    height: 1.3rem;
-    padding: 0.5rem;
-    padding-left: 1.5rem;
+#button{
+    border-color: transparent;
+    width: 10rem;
     border-radius: 5rem;
-    margin:0.1rem;
+    background-color: rgb(255, 217, 182);
+    color:rgb(222, 134, 51);
+    font-weight: bold;
+    font-size: 1.8rem;
+    cursor: pointer;
+    height: 3rem;
+    justify-self: center;
+    padding-right: 2vw;
+    padding-bottom: 0.8vw;
+}
+
+.form-control::placeholder{
+    color:rgb(48, 63, 159);
+}
+
+#email, #senha, #nome, #data_nasc{
+    border-radius: 5rem;
     outline: none;
     border-color: transparent;
     background-color: rgb(207, 207, 254);
     cursor: pointer;
 }
 
-#feminino{
-    margin-bottom: 0.4rem;
-    margin-left: -0.1rem;
+h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    color:rgb(48, 63, 159);
+    margin-bottom: 5vw;
+    margin-top: -1vw;
 }
 
-#masculino{
-    margin-top: 0.7rem;
+#senha_section{
+    position: relative;
 }
 
-#masc{
-    margin-top: -0.5rem;
-    margin-left: -0.1rem;
+.bi-eye-slash{
+    position: absolute;
+    bottom: 3.4rem; 
+    right: 2rem;
+    cursor: pointer;
+}
+
+.bi-eye{
+    position: absolute;
+    bottom: 3.4rem; 
+    right: 2rem;
     cursor: pointer;
 }
 
@@ -86,76 +104,30 @@ input[type="radio"]{
     cursor: pointer;
 }
 
-.gen{
-    color: rgb(48, 63, 159);
-    margin-top: -0.5rem;
-    padding: 0.5rem;
-    margin-left: 0.2rem;
+#data_nasc::placeholder{
+    font-size: 16px;
+    white-space: normal;
+    color:rgb(48, 63, 159);
+}
+
+@media(min-width: 500px){
+    #data_nasc::placeholder{
+        padding-top: 0.7rem;
+    }
 }
 
 #data_nasc{
-    width: 9rem;
-    height: 1.3rem;
-    padding: 0.5rem;
-    padding-left: 1rem;
-    border-radius: 5rem;
-    margin-left:2rem;
-    outline: none;
-    border-color: transparent;
-    background-color: rgb(207, 207, 254);
-    cursor: pointer;
+    resize: none;
 }
 
-#data_nasc::placeholder{
-    padding: 0.5rem;
+.btn{
+    position: relative;
 }
 
-input[type="email"], input[type="password"]{
-    width: 25rem;
-    height: 1.3rem;
-    padding: 0.5rem;
-    padding-left: 1.5rem;
-    border-radius: 5rem;
-    margin:0.1rem;
-    outline: none;
-    border-color: transparent;
-    background-color: rgb(207, 207, 254);
-    cursor: pointer;
-}
-
-input::placeholder{
-    color: rgb(48, 63, 159);
-}
-
-button{
-    margin-top: 1.5rem;
-    border-radius: 2rem;
-    padding: 0.7rem 1.7rem 0.7rem 0.7rem;
-    border-color: transparent;
-    width: 8rem;
-    background-color: rgb(255, 217, 182);
-    color:rgb(222, 134, 51);
-    font-weight: bold;
-    font-size: 0.9rem;
-    cursor: pointer;
-}
-
-.material-symbols-outlined{
-    margin-top: -2rem;
-    margin-left: 4.3rem;
+#seta{
+    position: absolute;
+    margin-left: 6rem;
     color: rgb(222, 134, 51);
-    cursor: pointer;
-}
-
-#mostrar_senha{
-    margin-top: -1.8rem;
-    margin-left: 23rem;
-}
-
-#carrossel{
-    grid-column: 2;
-}
-
-.bi-eye-slash{
+    font-size: 1.3rem;
     cursor: pointer;
 }
