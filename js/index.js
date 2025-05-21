@@ -1,21 +1,14 @@
 const express = require('express');
-const cors = require('cors');
-const db = require('./db');
-
 const app = express();
-app.use(cors());
+require('dotenv').config();
+
+const authRoutes = require('./routes/authRoutes');
+
 app.use(express.json());
 
-app.get('/usuarios', (req, res) => {
-  db.query('SELECT * FROM usuarios', (err, results) => {
-    if (err) {
-      return res.status(500).json({ erro: 'Erro ao buscar usuários' });
-    }
-    res.json(results);
-  });
-});
+app.use('/api/auth', authRoutes);
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`);
+  console.log(`Servidor rodando na porta ${PORT}`);
 });

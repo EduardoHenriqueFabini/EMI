@@ -10,11 +10,4 @@ function mostrarSenha(){
         senha.setAttribute('type', 'password')
         mostrarSenha.classList.replace('bi-eye','bi-eye-slash')
     }
-}
- function mostrarData(){
-
- }
-
- function esconderData(){
-
- }
+};
