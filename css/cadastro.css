@@ -171,7 +171,6 @@ input[type="radio"]{
     }
   }
 
-
   .btn {
     padding: 1em 2em;
     position: absolute;
@@ -188,23 +187,19 @@ input[type="radio"]{
     background-color: rgb(207, 207, 254);
     transition: transform 0.2s ease-in-out;
 
-
     &:active,
     &:focus {
       transform: translateY(-50%) scale(0.9);
     }
-
 
     &:hover {
       transform: translateY(-50%) scale(0.96);
     }
   }
 
-
   .prev {
     left: 20px;
   }
-
 
   .next {
     right: 20px;
