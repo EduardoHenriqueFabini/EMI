@@ -1,0 +1,132 @@
+#div{
+    background-color: white;
+    width: 100%
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+}
+
+section{
+    flex: 1;
+    height: 100%;
+}
+
+html{
+    border: 1.5rem solid rgb(207, 207, 254);
+    box-sizing:border-box;
+    height: 100%;
+}
+
+main{
+    flex: 1;
+    display: flex;
+}
+
+section{
+    flex: 1 !important;
+    height: 100% !important;
+}
+
+@media (max-width: 576px){
+    html{
+        border: none;
+    }
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+#seta{
+    color: rgb(222, 134, 51);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+@media(max-width: 576px){
+    #seta{
+        font-size: 2rem
+    }
+}
+
+h1{
+    font-size: 2rem !important;
+    color:rgb(48, 63, 159) !important;
+    font-family: "Roboto", sans-serif;
+}
+
+@media(max-width: 576px){
+    h1{
+        font-size: 1.3rem!important;
+        color:rgb(48, 63, 159) !important;
+        font-family: "Roboto", sans-serif;
+    }
+}
+
+@media(max-width: 992px){
+    #fig_header{
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #s2 {
+        margin-top: 1rem !important;
+    }
+}
+
+#nome_user{
+    font-size: 2vh;
+    color: rgb(48, 63, 159);
+}
+
+#graf{
+    font-size: 1.7vh;
+    color: rgb(48, 63, 159);
+    
+}
+
+.bi-info-circle{
+    font-size: 2vh;
+    color: rgb(48, 63, 159);
+}
+
+#not{
+    color: rgb(48, 63, 159);
+    font-size: 2.3vh;
+}
+
+@media(max-width: 576px){
+    #not{
+        font-size: 1.8vh;
+    }
+}
+
+.bi-house, .bi-person{
+    font-size: 7vh;
+    color: rgb(222, 134, 51)
+}
+
+@media(max-width: 576px){
+    .bi-house, .bi-person{
+        font-size: 5vh;
+    }
+}
+
+footer{
+    padding: 4vh;
+}
+
+#grafico{
+    background-color: rgb(222, 134, 51);
+    width: 30vw;
+    height: 30vh;
+    margin-bottom: 1vh;
+}

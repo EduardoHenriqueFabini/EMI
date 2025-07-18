@@ -11,13 +11,26 @@ function mostrarSenha(){
         mostrarSenha.classList.replace('bi-eye','bi-eye-slash')
     }
 }
- function mostrarData(){
 
- }
+function mostrarData(){
 
- function esconderData(){
+  var data = document.getElementById('data_nasc')
 
- }
+  data.setAttribute('type', 'date')
+
+}
+
+function esconderData(){
+  
+  var data = document.getElementById('data_nasc');
+
+  data.setAttribute('type', 'text')
+
+}
+
+function mudarTela(url){
+  window.location.href = url
+}
 
  document.addEventListener("DOMContentLoaded", function () {
   let carousel = document.querySelector(".carousel");

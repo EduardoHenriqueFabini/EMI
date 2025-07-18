@@ -39,6 +39,14 @@ h1{
     padding-bottom: 0.8vw;
 }
 
+#button:hover{
+  background-color: rgb(241, 196, 155);
+}
+
+#email:hover, #senha:hover{
+  background-color: rgb(191, 191, 246);
+}
+
 #email, #senha{
     border-radius: 5rem;
 >>>>>>> zaffari

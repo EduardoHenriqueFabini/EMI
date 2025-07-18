@@ -86,8 +86,8 @@ h1{
 
 .bi-eye-slash{
     position: absolute;
-    bottom: 3.4rem; 
-    right: 2rem;
+    bottom: 4.3rem; 
+    right: 1.8rem;
     cursor: pointer;
 }
 
@@ -130,6 +130,13 @@ input[type="radio"]{
     cursor: pointer;
 }
 
+#button:hover{
+  background-color: rgb(241, 196, 155);
+}
+
+#email:hover, #senha:hover, #data_nasc:hover, #nome:hover{
+  background-color: rgb(191, 191, 246);
+}
 
 .carousel-container {
   width: 100%;
