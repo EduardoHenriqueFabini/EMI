@@ -56,3 +56,9 @@ h1{
 .form-control::placeholder{
     color:rgb(48, 63, 159);
 }
+
+#seta{
+    color: rgb(222, 134, 51);
+    font-size: 3rem;
+    cursor: pointer;
+}
