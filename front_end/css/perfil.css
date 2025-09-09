@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    border: 1rem solid rgb(207, 207, 254);
+    box-sizing:border-box;
+    height: 100vh;
+}
+
+@media (max-width: 576px){
+    body{
+        border: none;
+    }
+}
+
+main{
+    flex: 1;
+    display: flex;
+}
+
+section{
+    flex: 1 !important;
+    height: 100% !important;
+}
+
+@media (max-width: 576px){
+    html{
+        border: none;
+    }
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+#seta{
+    color: rgb(222, 134, 51);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+@media(max-width: 576px){
+    #seta{
+        font-size: 2rem
+    }
+}
+
+h1{
+    font-size: 2rem !important;
+    color:rgb(48, 63, 159) !important;
+    font-family: "Roboto", sans-serif;
+}
+
+@media(max-width: 576px){
+    h1{
+        font-size: 1.3rem!important;
+        color:rgb(48, 63, 159) !important;
+        font-family: "Roboto", sans-serif;
+    }
+}
+
+@media(max-width: 992px){
+    #fig_header{
+        margin-left: 2rem;
+    }
+}
+
+#nome_user{
+    font-size: 2vh;
+    color: rgb(48, 63, 159);
+}
+
+#graf{
+    font-size: 1.9vh;
+    color: rgb(48, 63, 159);
+}
+
+#info_graf{
+    font-size: 1.9vh;
+    color: rgb(48, 63, 159);
+}
+
+#not{
+    color: rgb(48, 63, 159);
+    font-size: 2.5vh;
+}
+
+@media(max-width: 576px){
+    #not{
+        font-size: 1.8vh;
+    }
+}
+
+.bi-house, .bi-person, .bi-info-circle{
+    font-size: 7vh;
+    color: rgb(222, 134, 51)
+}
+
+@media(max-width: 576px){
+    .bi-house, .bi-person, .bi-info-circle{
+        font-size: 5vh;
+    }
+}
+
+#grafico{
+    background-color: rgb(51, 100, 222);
+    width: 30vw;
+    height: 30vh;
+    margin-bottom: 1vh;
+}
+
+@media (max-width: 576px){
+    #grafico{
+        width: 60vw;
+    }
+}
+
+footer{
+    padding: 0 0 1rem 0;
+}
+
+.toggle {
+    display: inline-block;
+    height: 1.5rem;
+    position: relative;
+    width: 3rem
+}
+
+.toggle input {
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.toggle input::before {
+    background-color: rgb(208, 203, 203);
+    border-radius: 1rem;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: background-color 0.25s ease-in-out;
+    width: 100%;
+}
+
+.toggle input:checked::before {
+    background-color: rgb(207, 207, 254);
+}
+
+.toggle input::after {
+    background-color: #ffffff;
+    border-radius: 50%;
+    content: '';
+    height: 1rem;
+    left: 0.2rem;
+    position: absolute;
+    top: 0.2rem;
+    transition: transform 0.25s ease-in-out;
+    width: 1rem;
+}
+
+.toggle input:checked::after {
+    transform: translateX(1.5rem);
+}
+
+#del_conta{
+    margin-top:2rem;
+    color: rgb(240, 8, 8);
+    text-decoration:underline;
+    font-size: 2vh;
+}
